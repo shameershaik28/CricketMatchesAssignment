@@ -14,21 +14,19 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
-        <!-- Gson Dependency -->
+        <!-- Jackson for JSON parsing -->
         <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
-            <version>2.8.9</version>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.13.4.2</version>
         </dependency>
 
-        <!-- HttpClient Dependency (for API request) -->
+        <!-- HttpClient for making HTTP requests (Java 11 and later has HttpClient by default) -->
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
             <version>4.5.13</version>
         </dependency>
-
-        <!-- Add any other dependencies here -->
     </dependencies>
 
 </project>
