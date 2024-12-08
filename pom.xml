@@ -9,23 +9,17 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>23</maven.compiler.source>
+        <maven.compiler.source>23</maven.compiler.source> <!-- Use 23 if you're using JDK 23 -->
         <maven.compiler.target>23</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
     <dependencies>
-        <!-- Jackson for JSON parsing -->
+        <!-- JSON Parsing Library -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.13.4.2</version>
-        </dependency>
-
-        <!-- HttpClient for making HTTP requests (Java 11 and later has HttpClient by default) -->
-        <dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpclient</artifactId>
-            <version>4.5.13</version>
+            <version>2.15.2</version>
         </dependency>
     </dependencies>
 
